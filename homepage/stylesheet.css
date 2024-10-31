@@ -31,11 +31,14 @@ a {
 }
 
 .about {
-    justify-content: center;
+    position: absolute;
+    bottom: 10px;
     width: 150px;
-    display: flex;
-    margin: 40% auto auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
     border-radius: 10px;
     padding: 10px;
+    text-align: center;
     background-color: rgba(82, 89, 100, 0.8);
 }
