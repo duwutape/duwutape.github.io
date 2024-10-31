@@ -1,0 +1,41 @@
+body {
+    font-family: "JetBrains Mono", monospace;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../res/background_arcane.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.link-box {
+    max-width: 34%;
+    text-align: center;
+    background-color: rgba(82, 89, 100, 0.8);
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.link-img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.about {
+    justify-content: center;
+    width: 150px;
+    display: flex;
+    margin: 40% auto auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(82, 89, 100, 0.8);
+}
