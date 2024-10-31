@@ -16,10 +16,10 @@ a {
 }
 
 .link-box {
-    max-width: 34%;
+    max-width: 38%;
     text-align: center;
     background-color: rgba(82, 89, 100, 0.8);
-    padding: 10px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
     margin: auto;
     border-radius: 10px;
 }
