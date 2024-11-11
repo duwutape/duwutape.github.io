@@ -13,6 +13,7 @@ body {
 a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .link-box {
@@ -38,6 +39,8 @@ a {
     margin: 30px auto;
     border-radius: 10px;
     backdrop-filter: blur(3px);
+    transition: opacity 0.75s;
+    transition-timing-function: ease-in-out;
 }
 
 table {
@@ -45,7 +48,6 @@ table {
     border-radius: 10px;
     border-spacing: 0;
     margin: auto;
-    visibility: ;
 }
 
 th {

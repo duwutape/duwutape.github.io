@@ -1,9 +1,9 @@
 const toggleTimetable = function () {
     const timetable = document.getElementById("timetable");
-    if (timetable.style.visibility === "visible") {
-        timetable.style.visibility =  "hidden";
+    if (timetable.style.opacity === "0") {
+        timetable.style.opacity =  "1";
     }
     else {
-        timetable.style.visibility = "visible";
+        timetable.style.opacity = "0";
     }
 }
