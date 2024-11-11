@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>duwutape</title>
     <link rel="icon" type="image/x-icon" href="res/profile_picture.png">
+    <script src="homepage/init.js" async></script>
 
 </head>
 
@@ -36,8 +37,7 @@
     <a href="https://www.studierendenwerk-kassel.de/speiseplaene/mensa-71-wilhelmshoeher-allee" target="_blank">
         <img class="link-img" src="res/mensa.png" alt="mensa">
     </a>
-    <!--TODO timetable-->
-    <a>
+    <a onclick="toggleTimetable()">
         <img class="link-img" src="res/time-and-calendar.png" alt="timetable">
     </a>
     <a href="http://192.168.178.1" target="_blank">
@@ -46,6 +46,99 @@
     <a href="http://raspberrypi.local:1880/ui" target="_blank">
         <img class="link-img" src="res/thermometer.png" alt="temperature">
     </a>
+</div>
+
+<div id="timetable" class="timetable-box">
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <th>08:00</th>
+            <td id="mon1" class="red">LaTeX<br>Raum 1201</td>
+            <td id="tue1">-</td>
+            <td id="wed1">-</td>
+            <td id="thu1">-</td>
+            <td id="fri1">-</td>
+        </tr>
+        <tr>
+            <th>09:00</th>
+            <td id="mon2" class="red">LaTeX<br>1201</td>
+            <td id="tue2" class="blue">Stochastik Übung<br>Raum 0315</td>
+            <td id="wed2">-</td>
+            <td id="thu2">-</td>
+            <td id="fri2">-</td>
+        </tr>
+        <tr>
+            <th>10:00</th>
+            <td id="mon3">-</td>
+            <td id="tue3" class="purple">BerKomp Tutorium<br>Raum -1319</td>
+            <td id="wed3">-</td>
+            <td id="thu3">-</td>
+            <td id="fri3">-</td>
+        </tr>
+        <tr>
+            <th>11:00</th>
+            <td id="mon4">-</td>
+            <td id="tue4" class="purple">BerKomp Tutorium<br>Raum -1319</td>
+            <td id="wed4">-</td>
+            <td id="thu4">-</td>
+            <td id="fri4">-</td>
+        </tr>
+        <tr>
+            <th>12:00</th>
+            <td id="mon5">-</td>
+            <td id="tue5">-</td>
+            <td id="wed5">-</td>
+            <td id="thu5">-</td>
+            <td id="fri5">-</td>
+        </tr>
+        <tr>
+            <th>13:00</th>
+            <td id="mon6">-</td>
+            <td id="tue6">-</td>
+            <td id="wed6">-</td>
+            <td id="thu6">-</td>
+            <td id="fri6">-</td>
+        </tr>
+        <tr>
+            <th>14:00</th>
+            <td id="mon7" class="purple">BerKomp Hörsaalübung<br>Raum 1603</td>
+            <td id="tue7">-</td>
+            <td id="wed7">-</td>
+            <td id="thu7">-</td>
+            <td id="fri7">-</td>
+        </tr>
+        <tr>
+            <th>15:00</th>
+            <td id="mon8" class="purple">BerKomp Hörsaalübung<br>Raum 1603</td>
+            <td id="tue8">-</td>
+            <td id="wed8">-</td>
+            <td id="thu8">-</td>
+            <td id="fri8">-</td>
+        </tr>
+        <tr>
+            <th>16:00</th>
+            <td id="mon9" class="blue">Stochastik Live-Session<br>Raum 1603</td>
+            <td id="tue9">-</td>
+            <td id="wed9">-</td>
+            <td id="thu9">-</td>
+            <td id="fri9">-</td>
+        </tr>
+        <tr>
+            <th>17:00</th>
+            <td id="mon10" class="blue">Stochastik Live-Session<br>Raum 1603</td>
+            <td id="tue10">-</td>
+            <td id="wed10">-</td>
+            <td id="thu10">-</td>
+            <td id="fri10">-</td>
+        </tr>
+    </table>
 </div>
 
 <div>
