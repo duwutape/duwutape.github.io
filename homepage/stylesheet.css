@@ -16,6 +16,7 @@ a {
 }
 
 .link-box {
+    /* TODO edit width */
     max-width: 45%;
     text-align: center;
     background-color: rgba(82, 89, 100, 0.8);
