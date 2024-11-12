@@ -27,6 +27,12 @@ const markActive = function() {
 
     const target = document.getElementById(getTableCell(time, day));
     const color = target.className;
+
+    const old_hour = pad(date.getHours() - 1, 2, 0);
+    const old_time = `${old_hour}${minute}`;
+    const old_target = document.getElementById(getTableCell(old_time, day));
+    const old_color = old_target.className;
+
     if (target) {
 
         if (color === "red") {
@@ -43,6 +49,23 @@ const markActive = function() {
         }
         target.style.border = "1px red solid";
         target.style.fontWeight = "bold";
+    }
+
+    if (old_target) {
+        if (old_color === "red") {
+            old_target.style.background = "rgba(255, 51, 51, 0.2)";
+        }
+        else if (old_color === "purple") {
+            old_target.style.background = "rgba(172, 76, 198, 0.2)";
+        }
+        else if (old_color === "blue") {
+            old_target.style.background = "rgba(0, 76, 198, 0.2)";
+        }
+        else {
+            old_target.style.background = "none";
+        }
+        old_target.style.border = "1px black solid";
+        old_target.style.fontWeight = "normal";
     }
 }
 
