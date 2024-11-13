@@ -36,8 +36,9 @@ a {
     transform: scale(1.5);
 }
 
-.timetable-box{
-    max-width: 835px;
+.timetable-box {
+    max-width: 795px;
+    min-width: 696px;
     text-align: center;
     background-color: rgba(82, 89, 100, 0.8);
     padding: 20px;
@@ -51,7 +52,6 @@ table {
     width: auto;
     border-radius: 10px;
     border-spacing: 0;
-    margin: auto;
 }
 
 th {
@@ -64,6 +64,7 @@ th {
 
 td {
     min-width: 100px;
+    /*width: 100px;*/
     height: 42px;
     padding: 5px;
     border: 1px black solid;
@@ -82,12 +83,8 @@ td {
     background-color: rgba(0, 76, 198, 0.2);
 }
 .about {
-    position: absolute;
-    bottom: 10px;
-    width: 150px;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin: auto;
+    max-width: 110px;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
