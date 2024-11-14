@@ -7,139 +7,50 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>duwutape</title>
     <link href="res/profile_picture.png" rel="icon" type="image/x-icon">
-    <script async src="homepage/init.js"></script>
+    <script async src="js/init.js"></script>
 
 </head>
 
 <body>
 
 <div class="link-box">
-    <a href="https://youtube.com" target="_blank">
-        <img alt="youtube" class="link-img" src="res/youtube.png">
-    </a>
-    <a href="https://twitch.tv" target="_blank">
-        <img alt="twitch" class="link-img" src="res/twitch.png">
-    </a>
-    <a href="https://github.com" target="_blank">
-        <img alt="github" class="link-img" src="res/github.png">
-    </a>
-    <a href="https://calendar.google.com/calendar/u/0/r/week" target="_blank">
-        <img alt="google calendar" class="link-img" src="res/google_calendar.png">
-    </a>
-    <a href="https://moodle.uni-kassel.de" target="_blank">
-        <img alt="moodle" class="link-img" src="res/moodle.png">
-    </a>
-    <a href="https://mail.uni-kassel.de" target="_blank">
-        <img alt="outlook" class="link-img" src="res/outlook.png">
-    </a>
-    <a href="https://portal.uni-kassel.de" target="_blank">
-        <img alt="uni" class="link-img" src="res/uni.png">
-    </a>
-    <a href="https://www.studierendenwerk-kassel.de/speiseplaene/mensa-71-wilhelmshoeher-allee" target="_blank">
-        <img alt="mensa" class="link-img" src="res/mensa.png">
-    </a>
-    <a onclick="toggleTimetable()">
-        <img alt="timetable" class="link-img" src="res/time-and-calendar.png">
-    </a>
-    <a href="http://192.168.178.1" target="_blank">
-        <img alt="router" class="link-img" src="res/wlan-router.png">
-    </a>
-    <a href="http://raspberrypi.local:1880/ui" target="_blank">
-        <img alt="temperature" class="link-img" src="res/thermometer.png">
-    </a>
-</div>
-
-<div class="timetable-box" id="timetable" style="opacity: 0">
-    <table>
-        <tr>
-            <th>Time</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-        </tr>
-        <tr>
-            <th>08:00</th>
-            <td class="red" id="mon1">LaTeX<br>Raum -1201</td>
-            <td id="tue1">-</td>
-            <td id="wed1">-</td>
-            <td id="thu1">-</td>
-            <td id="fri1">-</td>
-        </tr>
-        <tr>
-            <th>09:00</th>
-            <td class="red" id="mon2">LaTeX<br>Raum -1201</td>
-            <td class="blue" id="tue2">Stochastik Übung<br>Raum 0315</td>
-            <td id="wed2">-</td>
-            <td id="thu2">-</td>
-            <td id="fri2">-</td>
-        </tr>
-        <tr>
-            <th>10:00</th>
-            <td id="mon3">-</td>
-            <td class="purple" id="tue3">BerKomp Tutorium<br>Raum -1319</td>
-            <td id="wed3">-</td>
-            <td id="thu3">-</td>
-            <td id="fri3">-</td>
-        </tr>
-        <tr>
-            <th>11:00</th>
-            <td id="mon4">-</td>
-            <td class="purple" id="tue4">BerKomp Tutorium<br>Raum -1319</td>
-            <td id="wed4">-</td>
-            <td id="thu4">-</td>
-            <td id="fri4">-</td>
-        </tr>
-        <tr>
-            <th>12:00</th>
-            <td id="mon5">-</td>
-            <td id="tue5">-</td>
-            <td id="wed5">-</td>
-            <td id="thu5">-</td>
-            <td id="fri5">-</td>
-        </tr>
-        <tr>
-            <th>13:00</th>
-            <td id="mon6">-</td>
-            <td id="tue6">-</td>
-            <td id="wed6">-</td>
-            <td id="thu6">-</td>
-            <td id="fri6">-</td>
-        </tr>
-        <tr>
-            <th>14:00</th>
-            <td class="purple" id="mon7">BerKomp Hörsaalübung<br>Raum 1603</td>
-            <td id="tue7">-</td>
-            <td id="wed7">-</td>
-            <td id="thu7">-</td>
-            <td id="fri7">-</td>
-        </tr>
-        <tr>
-            <th>15:00</th>
-            <td class="purple" id="mon8">BerKomp Hörsaalübung<br>Raum 1603</td>
-            <td id="tue8">-</td>
-            <td id="wed8">-</td>
-            <td id="thu8">-</td>
-            <td id="fri8">-</td>
-        </tr>
-        <tr>
-            <th>16:00</th>
-            <td class="blue" id="mon9">Stochastik Live-Session<br>Raum 1603</td>
-            <td id="tue9">-</td>
-            <td id="wed9">-</td>
-            <td id="thu9">-</td>
-            <td id="fri9">-</td>
-        </tr>
-        <tr>
-            <th>17:00</th>
-            <td class="blue" id="mon10">Stochastik Live-Session<br>Raum 1603</td>
-            <td id="tue10">-</td>
-            <td id="wed10">-</td>
-            <td id="thu10">-</td>
-            <td id="fri10">-</td>
-        </tr>
-    </table>
+    <div>
+        <a href="https://youtube.com" target="_blank">
+            <img alt="youtube" class="link-img" src="res/youtube.png">
+        </a>
+        <a href="https://twitch.tv" target="_blank">
+            <img alt="twitch" class="link-img" src="res/twitch.png">
+        </a>
+        <a href="https://github.com" target="_blank">
+            <img alt="github" class="link-img" src="res/github.png">
+        </a>
+        <a href="https://calendar.google.com/calendar/u/0/r/week" target="_blank">
+            <img alt="google calendar" class="link-img" src="res/google_calendar.png">
+        </a>
+        <a href="http://192.168.178.1" target="_blank">
+            <img alt="router" class="link-img" src="res/wlan-router.png">
+        </a>
+        <a href="http://raspberrypi.local:1880/ui" target="_blank">
+            <img alt="temperature" class="link-img" src="res/thermometer.png">
+        </a>
+    </div>
+    <div>
+        <a href="https://moodle.uni-kassel.de" target="_blank">
+            <img alt="moodle" class="link-img" src="res/moodle.png">
+        </a>
+        <a href="https://mail.uni-kassel.de" target="_blank">
+            <img alt="outlook" class="link-img" src="res/outlook.png">
+        </a>
+        <a href="https://portal.uni-kassel.de" target="_blank">
+            <img alt="uni" class="link-img" src="res/uni.png">
+        </a>
+        <a href="https://www.studierendenwerk-kassel.de/speiseplaene/mensa-71-wilhelmshoeher-allee" target="_blank">
+            <img alt="mensa" class="link-img" src="res/mensa.png">
+        </a>
+        <a href="timetable.html">
+            <img alt="timetable" class="link-img" src="res/time-and-calendar.png">
+        </a>
+    </div>
 </div>
 
 <div class="about">
