@@ -1,10 +1,10 @@
-const inRange = function(i, low, high) {
+const inRange = function (i, low, high) {
     return i >= low && i <= high;
 }
 
-const getTableCell = function(t, day) {
+const getTableCell = function (t, day) {
     let cell;
-    if      (inRange(t, 800, 859)) cell = 1
+    if (inRange(t, 800, 859)) cell = 1
     else if (inRange(t, 900, 959)) cell = 2
     else if (inRange(t, 1000, 1059)) cell = 3
     else if (inRange(t, 1100, 1159)) cell = 4
@@ -17,7 +17,7 @@ const getTableCell = function(t, day) {
     return `${day}${cell}`;
 }
 
-const markActive = function() {
+const markActive = function () {
     const date = new Date();
 
     const day = days[date.getDay()].toLowerCase();
@@ -37,14 +37,11 @@ const markActive = function() {
 
         if (color === "red") {
             target.style.background = "rgba(206, 40, 40, 0.6)";
-        }
-        else if (color === "purple") {
+        } else if (color === "purple") {
             target.style.background = "rgba(137, 60, 158, 0.6)";
-        }
-        else if (color === "blue") {
+        } else if (color === "blue") {
             target.style.background = "rgba(0, 60, 158, 0.6)";
-        }
-        else {
+        } else {
             target.style.background = "rgba(52, 57, 64, 0.6)";
         }
         target.style.border = "1px red solid";
@@ -54,14 +51,11 @@ const markActive = function() {
     if (old_target) {
         if (old_color === "red") {
             old_target.style.background = "rgba(255, 51, 51, 0.2)";
-        }
-        else if (old_color === "purple") {
+        } else if (old_color === "purple") {
             old_target.style.background = "rgba(172, 76, 198, 0.2)";
-        }
-        else if (old_color === "blue") {
+        } else if (old_color === "blue") {
             old_target.style.background = "rgba(0, 76, 198, 0.2)";
-        }
-        else {
+        } else {
             old_target.style.background = "none";
         }
         old_target.style.border = "1px black solid";

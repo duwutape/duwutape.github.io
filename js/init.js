@@ -6,7 +6,7 @@ const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const scriptInit = function (name) {
     const script = document.createElement('script');
-    script.src = `./homepage/${name}.js`;
+    script.src = `./js/${name}.js`;
     script.async = true;
     document.head.appendChild(script);
 }
