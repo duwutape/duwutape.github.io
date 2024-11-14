@@ -60,3 +60,10 @@ p {
 .socials {
     text-align: center;
 }
+
+@media screen and (max-width: 500px){
+    .content {
+        max-width: 90%;
+        min-width: 320px;
+    }
+}

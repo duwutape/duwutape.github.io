@@ -19,8 +19,7 @@ header {
 }
 
 .timetable-box {
-    max-width: 795px;
-    min-width: 696px;
+    width: 795px;
     text-align: center;
     background-color: rgba(82, 89, 100, 0.8);
     padding: 20px;
@@ -34,6 +33,7 @@ table {
     width: auto;
     border-radius: 10px;
     border-spacing: 0;
+    margin: auto;
 }
 
 th {
@@ -77,4 +77,15 @@ a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+@media screen and (max-width: 875px){
+    .timetable-box {
+        width: 90%;
+        min-width: 552px;
+        max-width: 795px;
+    }
+
+    td {
+        min-width: 0;
+    }
 }
