@@ -17,7 +17,7 @@ a {
 }
 
 .link-box {
-    width: 480px;
+    width: 548px; /* for every new image in a row add 68px */
     text-align: center;
     background-color: rgba(82, 89, 100, 0.8);
     padding: 15px 10px 10px 10px;
