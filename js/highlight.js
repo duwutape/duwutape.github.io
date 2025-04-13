@@ -23,18 +23,22 @@ const markActive = function () {
     const day = days[date.getDay()].toLowerCase();
     const hour = pad(date.getHours(), 2, 0);
     const minute = pad(date.getMinutes(), 2, 0);
-    const time = `${hour}${minute}`;
+    let time = `${hour}${minute}`;
+    let target = document.getElementById(getTableCell(time, day));
+    while (target === null && time >= 800 && time < 1800) {
+        time -= 100;
+        target = document.getElementById(getTableCell(time, day));
+    }
 
-    const target = document.getElementById(getTableCell(time, day));
-    const color = target.className;
-
-    const old_hour = pad(date.getHours() - 1, 2, 0);
-    const old_time = `${old_hour}${minute}`;
-    const old_target = document.getElementById(getTableCell(old_time, day));
-    const old_color = old_target.className;
+    let old_time = time - 100;
+    let old_target = document.getElementById(getTableCell(old_time, day));
+    while (old_target === null && old_time >= 800 && old_time < 1800) {
+        old_time -= 100;
+        old_target = document.getElementById(getTableCell(old_time, day))
+    }
 
     if (target) {
-
+        const color = target.className;
         if (color === "red") {
             target.style.background = "rgba(206, 40, 40, 0.6)";
         } else if (color === "purple") {
@@ -49,6 +53,7 @@ const markActive = function () {
     }
 
     if (old_target) {
+        const old_color = old_target.className;
         if (old_color === "red") {
             old_target.style.background = "rgba(255, 51, 51, 0.2)";
         } else if (old_color === "purple") {
