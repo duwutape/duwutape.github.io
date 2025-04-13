@@ -12,4 +12,3 @@ const scriptInit = function (name) {
 }
 
 scriptInit("highlight");
-scriptInit("timetable");
